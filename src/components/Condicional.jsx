@@ -11,6 +11,10 @@ export default function Condicional() {
         setUserEmail(email)
     }
 
+    function limparEmail() {
+        setUserEmail("")
+    }
+
 
     return (
         <div>
@@ -21,6 +25,7 @@ export default function Condicional() {
                 {userEmail && (
                     <div>
                         <p>O e-mail do usuario é: {userEmail}</p>
+                        <button onClick={limparEmail}>Limpar Email</button>
                     </div>
                 )}
             </form>
